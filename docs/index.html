@@ -2,19 +2,46 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>NIT demo</title>
-
+	<title>THE BEST SHOP</title>
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<h1 class="text-center">Demo Shop</h1>
-
-	<div class="container">
-		<div class="row product-grid">
-
-		</div>
+	<div id="header">
+		<h1>THE BEST SHOP</h1>
+		<div class="category-list"></div>
+		<button class="show-basket" type="button"></button>	
 	</div>
-  <!--<h2 class="initialism"> aaaa </h2>-->
-	<script src="./js/main.js"></script> 
+
+	<div class="basket">	
+		<button class="close-btn" type="button">X</button>
+		<h1> Кошик </h1>
+
+		<div class="basket-product-list"></div>
+
+		<form name="card-form">
+
+			<div><label for="name">Ваше ім'я </label>
+			<input type="text" id="name" name="name" required></div>
+
+			<div><label for="phone">Ваш телефон (+380801112233):</label>
+			<input type="tel" id="phone" name="phone" pattern="\+380[0-9]{9}" required></div>
+
+			<div><label for="email">Ваша пошта (example@mail.com):</label>
+			<input type="email" id="email" pattern=".+@.+" size="30" required></div>
+			
+			<button type="button" class="basket-buy-button">Купити</button>
+		</form>
+	</div>
+	
+	<div class="container">
+
+		<div class="product-grid"></div>
+
+	</div>
+
+	<div class="full-product"></div>
+
+		
+	<script src="./js/main.js"></script>
 </body>
 </html>
